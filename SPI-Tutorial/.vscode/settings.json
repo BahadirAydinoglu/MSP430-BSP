@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "msp430.h": "c",
+        "msp430g2452.h": "c"
+    }
+}
