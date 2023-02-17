@@ -8,7 +8,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./bsp.obj" \
+"./msp430_gpio.obj" \
 "./main.obj" \
 "../lnk_msp430g2452.cmd" \
 $(GEN_CMDS__FLAG) \
@@ -140,8 +140,8 @@ SPI-Tutorial.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "bsp.obj" "main.obj" 
-	-$(RM) "bsp.d" "main.d" 
+	-$(RM) "msp430_gpio.obj" "main.obj" 
+	-$(RM) "msp430_gpio.d" "main.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

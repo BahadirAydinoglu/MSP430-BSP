@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "args": [],     
+    "tasks": [        
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "cd SPI-Tutorial/Debug && make clean && make all && make install",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

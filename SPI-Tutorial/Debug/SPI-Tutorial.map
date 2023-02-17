@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker Unix v21.6.1                   
 ******************************************************************************
->> Linked Thu Feb 16 17:32:31 2023
+>> Linked Fri Feb 17 15:11:26 2023
 
 OUTPUT FILE NAME:   <SPI-Tutorial.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 0000e084
@@ -49,12 +49,12 @@ section   page    origin      length       input sections
 
 .text      0    0000e000    000000e0     
                   0000e000    00000042     main.obj (.text:main)
-                  0000e042    0000002a     bsp.obj (.text:GPIO_Init)
-                  0000e06c    00000018     bsp.obj (.text:GPIO_ReadPin)
+                  0000e042    0000002a     msp430_gpio.obj (.text:GPIO_Init)
+                  0000e06c    00000018     msp430_gpio.obj (.text:GPIO_ReadPin)
                   0000e084    00000014     rts430_eabi.lib : boot.c.obj (.text:_c_int00_noinit_noargs)
-                  0000e098    00000012     bsp.obj (.text:GPIO_InputPullup)
-                  0000e0aa    00000012     bsp.obj (.text:GPIO_ResetPin)
-                  0000e0bc    00000012     bsp.obj (.text:GPIO_SetPin)
+                  0000e098    00000012     msp430_gpio.obj (.text:GPIO_InputPullup)
+                  0000e0aa    00000012     msp430_gpio.obj (.text:GPIO_ResetPin)
+                  0000e0bc    00000012     msp430_gpio.obj (.text:GPIO_SetPin)
                   0000e0ce    00000008     rts430_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
                   0000e0d6    00000006                     : exit.c.obj (.text:abort)
                   0000e0dc    00000004                     : pre_init.c.obj (.text:_system_pre_init)
@@ -104,7 +104,7 @@ MODULE SUMMARY
        Module             code   ro data   rw data
        ------             ----   -------   -------
     ./
-       bsp.obj            120    0         0      
+       msp430_gpio.obj    120    0         0      
        main.obj           66     0         0      
     +--+------------------+------+---------+---------+
        Total:             186    0         0      

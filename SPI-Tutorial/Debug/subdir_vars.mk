@@ -7,27 +7,27 @@ CMD_SRCS += \
 ../lnk_msp430g2452.cmd 
 
 C_SRCS += \
-../bsp.c \
+../msp430_gpio.c \
 ../main.c 
 
 C_DEPS += \
-./bsp.d \
+./msp430_gpio.d \
 ./main.d 
 
 OBJS += \
-./bsp.obj \
+./msp430_gpio.obj \
 ./main.obj 
 
 OBJS__QUOTED += \
-"bsp.obj" \
+"msp430_gpio.obj" \
 "main.obj" 
 
 C_DEPS__QUOTED += \
-"bsp.d" \
+"msp430_gpio.d" \
 "main.d" 
 
 C_SRCS__QUOTED += \
-"../bsp.c" \
+"../msp430_gpio.c" \
 "../main.c" 
 
 

@@ -1,9 +1,8 @@
 #include <msp430.h>
-#include "bsp.h"
+#include "msp430_gpio.h"
 /**
  * main.c
  */
-
 
 #define SW  BIT3                    // Switch -> P1.3
 #define LED BIT0                    // Red LED -> P1.0

@@ -1,0 +1,7 @@
+msp430_gpio.obj: ../msp430_gpio.c
+msp430_gpio.obj: /opt/ti/ccs1220/ccs/ccs_base/msp430/include/msp430.h
+msp430_gpio.obj: /opt/ti/ccs1220/ccs/ccs_base/msp430/include/msp430g2452.h
+msp430_gpio.obj: /opt/ti/ccs1220/ccs/ccs_base/msp430/include/in430.h
+msp430_gpio.obj: /opt/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/intrinsics.h
+msp430_gpio.obj: /opt/ti/ccs1220/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/intrinsics_legacy_undefs.h
+msp430_gpio.obj: /home/bahadira/Seafile/BahadirFiles/Training/TIWorkspace/SPI-Tutorial/msp430_gpio.h
